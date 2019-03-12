@@ -40,7 +40,6 @@ body{
 }
 
 .main-header{
-/*	background-color: #ffffff;*/
 	background: linear-gradient(136deg, #ffdb4d 5%, #ffffff 5%);
 	margin: 0;
 	padding: 0;
@@ -65,9 +64,9 @@ body{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	position: relative;
-/*	background-color: #ffffff;*/
 	background: linear-gradient(134deg, #ffdb4d 12%, #ffffff 5%);
 	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .lecture.active{
@@ -105,6 +104,22 @@ body{
 	cursor: pointer;
 }
 
+.lecture::after{
+	content: "Подробнее";
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	opacity: 0.3;
+}
+
+.lecture.active::after{
+	content: "Свернуть";
+}
+
+.lecture.lecture--nolist::after{
+	content: "";
+}
+
 .thesis-list{
 	list-style: none;
 	margin: 0;
@@ -135,7 +150,6 @@ body{
 	transform: translateY(-44%);
 	height: 9px;
 	width: 9px;
-/*	border: 2px solid black;*/
 	border-radius: 50%;
 	background-color: #ffffff;
 }
@@ -152,10 +166,8 @@ body{
 	display: none;
 }
 
-/*
 .show-list:checked + .thesis-list{
 	display: block;
 }
-*/
 
 
