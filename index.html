@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="main.css">
+	<title>Календарь занятий</title>
+</head>
+<body>
+	<header class="main-header">
+		<h2 class="main-header__title"><span class="text--yellow">К</span>алендарь лекций</h2>
+	</header>
+	<main class="container">	
+		<div class="lecture">
+			<label>
+			<h3 class="lecture__title">Введение в CSS</h3>
+			<p class="lecture__date">Дата: 05.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>отрисовка блоков по умолчанию, блочные/inline-block/инлайновые блоки</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>селекторы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>каскадирование, приоритетность стилей, веса селекторов</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>величины и единицы измерения</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>оформление текста</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>блочная модель, display, width, height и компания</p>
+				</li>
+			</ul>
+			</label>
+		</div>
+		<div class="lecture">
+			<label>
+			<h3 class="lecture__title">CSS, часть 2</h3>
+			<p class="lecture__date">Дата: 07.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>позиционирование</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>флоаты</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>флексы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>типовые задачи - центрирование, верстка колонок, карточек, пунктов меню</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>псевдоклассы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>псевдоэлементы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>семантическая разметка</p>
+				</li>
+			</ul>
+			</label>
+		</div>
+		<div class="lecture lecture--nolist">
+			<label>
+			<h3 class="lecture__title">Практический семинар: Верстка</h3>
+			<p class="lecture__date">Дата: 12.03</p>
+			<input type="checkbox" class="show-list">
+			</label>
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">Введение в JS</h3>
+			<p class="lecture__date">Дата: 14.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>(возможно) разбор ДЗ по верстке</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>для чего? отличия разработки - реакция на события vs непрерывного выполнения</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>доставка в браузер - тег script</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>основы синтаксиса - обработка кода построчно интерпретатором, точки с запятой</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>типы данных: примитивные, массив, объект, оператор typeof</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>простые операторы: математика, склейка строк, булевские</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>переменные</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>alert/confirm/prompt/console.log</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">Базовые конструкции языка</h3>
+			<p class="lecture__date">Дата: 19.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>условные операторы if/switch/тернарник</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>циклы for/while/do..while</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>бесконечный цикл</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>break/continue</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>функции, аргументы, аргументы по умолчанию</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>основы замыканий (оч лайтово про доступность внешнего)</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">Массивы</h3>
+			<p class="lecture__date">Дата: 21.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>создание, обход элементов массива, добавление/удаление элементов</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>методы .map/.reduce/.forEach/.some/.every и так далее</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>алгоритмы/задачки про массивы</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">Объекты</h3>
+			<p class="lecture__date">Дата: 26.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>объектный литерал, поля, методы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>this</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>функции-конструкторы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>JSON</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>(возможно) es6 классы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>объекты-обертки</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">События</h3>
+			<p class="lecture__date">Дата: 28.03</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>click, contextmenu, mouseenter/mouseleave, mouseover/mouseout</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>keypress/keyup/keydown</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>input/submit/change</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>load/error/DOMContentLoaded</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>addEventListener</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>всплытие</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>примеры компонентов/виджетов на все события</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">Работа с формами</h3>
+			<p class="lecture__date">Дата: 02.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>input text/checkbox/radio</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>(возможно) html5 inputы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>select</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>валидация формы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>обработка формы на клиенте</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>неэлементы форм</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">BOM и основы DOM</h3>
+			<p class="lecture__date">Дата: 04.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>location</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>history</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>navigator (navigator.geolocation)</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>document.getElementById</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>объект-узел</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>innerHTML/innerText</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>работа с атрибутами</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>style</p>
+				</li>
+			</ul>
+		</label>		
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">Продвинутая работа с DOM</h3>
+			<p class="lecture__date">Дата: 09.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>document.getElementsByClassName, HtmlCollection</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>querySelector/querySelectorAll, NodeList</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>document.body</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>перемещение по DOM - children, siblings, parent</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>getComputedStyle</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>className/classList</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Шаблонизация</h3>
+			<p class="lecture__date">Дата: 11.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>склейка строк + innerHTML</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>createElement, appendChild, insertAfter</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>createDocumentFragment</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>ванильное создание верстки</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>двупроходная шаблонизация - пишем несложный шаблонизатор средствами браузера</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>
+			<h3 class="lecture__title">AJAX</h3>
+			<p class="lecture__date">Дата: 16.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>XMLHttpRequest</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>примеры - постраничность, обновление результатов матча, регистрация</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>(возможно) WebSocket</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>работа с API чего-нибудь</p>
+				</li>
+			</ul>
+		</label>	
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">JQuery</h3>
+			<p class="lecture__date">Дата: 18.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>jquery</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Работа со сторонними библиотеками</h3>
+			<p class="lecture__date">Дата: 23.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>В древние времена находили модули абы где, скачивали, пытались как-то вкрутить, все грустно</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>Теперь есть гитхаб, на котором есть все, куча документации и обновлений, йохохо</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>Как отличить классный модуль от так себе модуля</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>Как пользоваться документаций, как в общих чертах заставить модуль работать</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>Всякие классные модули по направленностям</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Введение в node.js</h3>
+			<p class="lecture__date">Дата: 25.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>откуда взялся</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>установка</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>запуск скриптов</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>обзорно про es6 let-const-стрелки</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Асинхронный код в JS</h3>
+			<p class="lecture__date">Дата: 30.04</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>откуда берется асинхронность в однопоточном JS</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>коллбеки</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>промисы</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">NPM & Express</h3>
+			<p class="lecture__date">Дата: 02.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>npm модули - поиск и использование</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>как написать и опубликовать свой модуль</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>простое HTTP приложение</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>миддлвары</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>статика</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Базы данных</h3>
+			<p class="lecture__date">Дата: 07.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>Зачем вообще</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>MongoDB</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>Подключаем в приложеньку</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture lecture--nolist">
+		<label>	
+			<h3 class="lecture__title">Практика: Написание приложения</h3>
+			<p class="lecture__date">Дата: 09.05</p>
+			<input type="checkbox" class="show-list">
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Git</h3>
+			<p class="lecture__date">Дата: 14.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>системы контроля версий - от папочек с кодом к умным программам</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>git</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>что такое репозиторий что валяется в папочке .git</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>git init</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>git add ., git commit, что такое коммит</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>что такое ветки, git branch</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>git merge, git rebase, как гит вычисляет коммиты</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>конфликты, git status</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>общение с удаленным репозиторием (git push/git pull/git fetch)</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>консоль или клиенты?</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Тестирование - инфра</h3>
+			<p class="lecture__date">Дата: 16.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>unit</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>ручное тестирование интерфейсов, ямлы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>hermione</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>стабы</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>скриншоты</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Инфраструктурные инструменты - инфра</h3>
+			<p class="lecture__date">Дата: 21.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>гит-хуки</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>линтеры</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>csscomb</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>что-то еще</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">CI - инфра</h3>
+			<p class="lecture__date">Дата: 23.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>деплой на продакшн руками по фтп/гит клон на продакшн сервере/силами роботов</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>github хуки - узнают что пора</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>настройка выкладки на примере travis</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture lecture--nolist">
+		<label>	
+			<h3 class="lecture__title">BEM</h3>
+			<p class="lecture__date">Дата: 28.05</p>
+			<input type="checkbox" class="show-list">
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Сборка</h3>
+			<p class="lecture__date">Дата: 30.05</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>Для чего? Примеры задач, где сборка помогает</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>Пример настройки webpack</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>???</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+		<div class="lecture">
+		<label>	
+			<h3 class="lecture__title">Хакатоны</h3>
+			<p class="lecture__date">Даты:</p>
+			<input type="checkbox" class="show-list">
+			<ul class="lecture__list thesis-list">
+				<li class="thesis-list__item">
+					<p>25.05</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>01.06</p>
+				</li>
+				<li class="thesis-list__item">
+					<p>08.06</p>
+				</li>
+			</ul>
+		</label>
+		</div>
+	</main>	
+	<script src="main.js"></script>
+</body>
+</html>
