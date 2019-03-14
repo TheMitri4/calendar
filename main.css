@@ -40,7 +40,7 @@ body{
 }
 
 .main-header{
-	background: linear-gradient(136deg, #ffdb4d 5%, #ffffff 5%);
+	background: linear-gradient(90deg, #ffdb4d 9%, #ffffff 5%);
 	margin: 0;
 	padding: 0;
 	padding-top: 25px;
@@ -65,17 +65,38 @@ body{
 	margin-top: 20px;
 	margin-bottom: 20px;
 	position: relative;
-	background: linear-gradient(134deg, #ffdb4d 12%, #ffffff 5%);
+/*	background: linear-gradient(134deg, #ffdb4d 12%, #ffffff 5%);*/
+	background-color: #fff;
 	cursor: pointer;
 	box-shadow: 0 1px 4px 0 rgba(32,33,36,0.28);
 }
 
+.lecture::before{
+	content: "";
+	height: 100%;
+	width: 50px;
+	background-color: #ffdb4d;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: width 0.1s;
+	transition-timing-function: linear;
+}
+
+.lecture.active::before{
+	width: 13%;
+}
+
+.lecture.lecture--nolist::before{
+	width: 50px;
+}
+
 .lecture.active{
-	background: linear-gradient(90deg, #ffdb4d 13%, #ffffff 5%);
+/*	background: linear-gradient(90deg, #ffdb4d 13%, #ffffff 5%);*/
 }
 
 .lecture.lecture--nolist{
-	background: linear-gradient(134deg, #ffdb4d 12%, #ffffff 5%);
+/*	background: linear-gradient(134deg, #ffdb4d 12%, #ffffff 5%);*/
 	cursor: auto;
 }
 
@@ -111,6 +132,10 @@ body{
 	bottom: 20px;
 	right: 20px;
 	opacity: 0.3;
+}
+
+.lecture:hover::after{
+	opacity: 0.6;
 }
 
 .lecture.active::after{
@@ -156,19 +181,27 @@ body{
 }
 
 .thesis-list{
-	display: none;
+	max-height: 0;
+/*	display: none;*/
+	transition: max-height .2s;
+	transition-timing-function: linear;
+	overflow: hidden;
 }
 
 .lecture.active .thesis-list{
-	display: block;
+/*	display: block;*/
+	max-height: 480px;
 }
 
 .show-list{
 	display: none;
 }
 
+/*
 .show-list:checked + .thesis-list{
 	display: block;
+	height: auto;
 }
+*/
 
 
