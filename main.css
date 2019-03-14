@@ -45,6 +45,7 @@ body{
 	padding: 0;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
 
 .main-header__title{
@@ -66,7 +67,7 @@ body{
 	position: relative;
 	background: linear-gradient(134deg, #ffdb4d 12%, #ffffff 5%);
 	cursor: pointer;
-	transition: all 0.5s;
+	box-shadow: 0 1px 4px 0 rgba(32,33,36,0.28);
 }
 
 .lecture.active{
