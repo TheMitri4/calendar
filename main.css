@@ -40,7 +40,7 @@ body{
 }
 
 .main-header{
-	background: linear-gradient(90deg, #ffdb4d 9%, #ffffff 5%);
+	background: linear-gradient(136deg, #ffdb4d 5%, #ffffff 5%);
 	margin: 0;
 	padding: 0;
 	padding-top: 25px;
@@ -71,6 +71,27 @@ body{
 	box-shadow: 0 1px 4px 0 rgba(32,33,36,0.28);
 }
 
+.lecture__triangle{
+	position: absolute;
+    top: 0;
+	height: 100%;
+}
+
+.lecture__triangle path{
+	fill: #ffdb4d;
+	transition: all 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.lecture.active .lecture__triangle path{
+	d: path("m 0 0 h 821 L -123.49 806 v 0 Z");
+}
+
+.lecture.lecture--nolist .lecture__triangle path{
+	d: path("m 0 0 h 123 l -123.4896 123 v 0 Z");
+}
+
+/*
 .lecture::before{
 	content: "";
 	height: 100%;
@@ -90,6 +111,7 @@ body{
 .lecture.lecture--nolist::before{
 	width: 50px;
 }
+*/
 
 .lecture.active{
 /*	background: linear-gradient(90deg, #ffdb4d 13%, #ffffff 5%);*/
@@ -156,7 +178,7 @@ body{
 
 .thesis-list__item{
 	position: relative;
-	padding-left: 20px;
+	padding-left: 29px;
 }
 
 .thesis-list__item p{
