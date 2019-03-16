@@ -35,12 +35,12 @@ body{
 @media (min-width: 900px){
 	.container{
 		margin: 0 auto;
-		max-width: 900px;
+		max-width: 930px;
 	}
 }
 
 .main-header{
-	background: linear-gradient(136deg, #ffdb4d 5%, #ffffff 5%);
+	background: #fff;
 	margin: 0;
 	padding: 0;
 	padding-top: 25px;
@@ -167,7 +167,7 @@ body{
 
 .thesis-list__item{
 	position: relative;
-	padding-left: 29px;
+	padding-left: 23px;
 }
 
 .thesis-list__item p{
@@ -215,7 +215,7 @@ body{
 }
 */
 
-@media (max-width: 930px){
+@media (max-width: 960px){
 	
 	.main-header{
 		background: linear-gradient(90deg, #ffdb4d 16%, #ffffff 5%);
