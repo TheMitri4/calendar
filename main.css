@@ -332,7 +332,7 @@ body{
 	}
 	
 	.lecture.active::before{
-		width: 8%;
+		width: 11%;
 	}
 	
 	.lecture.lecture--nolist::before{
@@ -340,7 +340,7 @@ body{
 	}
 	
 	.thesis-list{
-		padding-left: 7%;
+		padding-left: 10%;
 	}
 	
 	.thesis-list__item{
@@ -354,4 +354,20 @@ body{
 	.thesis-list__item::before{
 		left: -4.5%;
 	}	
+}
+
+@media (max-width: 340px){
+	
+	.lecture.active::before{
+		width: 9%;
+	}
+	
+	.lecture.lecture--nolist::before{
+		width: 6%;
+	}
+	
+	.thesis-list{
+		padding-left: 8%;
+	}
+	
 }
