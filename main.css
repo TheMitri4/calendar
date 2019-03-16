@@ -316,8 +316,19 @@ body{
 
 @media (max-width: 400px){
 	
-	.text--yellow{
-		color: black;
+	.main-header__title{
+		font-size: 30px;
+		margin: 0 auto;
+    	max-width: 280px;
+	}
+	
+	.lecture__title{
+		font-size: 20px;
+		max-width: 280px;
+	}
+	
+	.lecture__date{
+		font-size: 16px;
 	}
 	
 	.lecture.active::before{
@@ -332,7 +343,15 @@ body{
 		padding-left: 7%;
 	}
 	
+	.thesis-list__item{
+		padding-left: 3%;
+	}
+	
+	.thesis-list__item p {
+    	font-size: 16px;
+	}
+	
+	.thesis-list__item::before{
+		left: -4.5%;
+	}	
 }
-
-
-
