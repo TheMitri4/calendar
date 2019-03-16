@@ -46,6 +46,17 @@ body{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+	position: relative;
+}
+
+.main-header__triangle{
+	position: absolute;
+    top: 0;
+	height: 100%;
+}
+
+.main-header path{
+	fill: #ffdb4d;
 }
 
 .main-header__title{
@@ -90,28 +101,6 @@ body{
 .lecture.lecture--nolist .lecture__triangle path{
 	d: path("m 0 0 h 123 l -123.4896 123 v 0 Z");
 }
-
-/*
-.lecture::before{
-	content: "";
-	height: 100%;
-	width: 50px;
-	background-color: #ffdb4d;
-	position: absolute;
-	top: 0;
-	left: 0;
-	transition: width 0.1s;
-	transition-timing-function: linear;
-}
-
-.lecture.active::before{
-	width: 13%;
-}
-
-.lecture.lecture--nolist::before{
-	width: 50px;
-}
-*/
 
 .lecture.active{
 /*	background: linear-gradient(90deg, #ffdb4d 13%, #ffffff 5%);*/
@@ -225,5 +214,125 @@ body{
 	height: auto;
 }
 */
+
+@media (max-width: 930px){
+	
+	.main-header{
+		background: linear-gradient(90deg, #ffdb4d 16%, #ffffff 5%);
+	}
+	
+	.main-header__triangle{
+		display: none;
+	}
+	
+	.lecture__triangle{
+		display: none;
+	}
+	
+	.lecture{
+		-webkit-tap-highlight-color: rgba(0,0,0,0); 
+		-webkit-tap-highlight-color: transparent;
+	}
+	
+	.lecture::before{
+		content: "";
+		height: 100%;
+		width: 6%;
+		background-color: #ffdb4d;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: width 0.1s;
+		transition-timing-function: linear;
+	}
+	
+	.lecture.active::before{
+		width: 13%;
+	}
+	
+	.lecture.lecture--nolist::before{
+		width: 6%;
+	}
+	
+	.lecture::after{
+		bottom: 10px;
+		right: 10px;
+		font-size: 15px;
+	}
+	
+	.lecture:hover::after{
+		opacity: 0.3;
+	}
+	
+	.lecture__title{
+		font-size: 26px;
+		max-width: 480px;
+    	margin: 0 auto;
+	}	
+	
+	.lecture__date{
+		font-size: 18px;
+	}	
+	
+	
+	.thesis-list__item{
+		padding-left: 2%;
+	}
+	
+}
+
+@media (max-width: 600px){
+	
+	.main-header{
+		background: linear-gradient(90deg, #ffdb4d 8%, #ffffff 5%);
+	}
+	
+	.lecture.active::before{
+		width: 10%;
+	}
+	
+	.lecture.lecture--nolist::before{
+		width: 6%;
+	}
+	
+	.lecture__title{
+		font-size: 24px;
+		max-width: 370px;
+	}
+	
+	.lecture::after{
+		font-size: 13px;
+	}
+	
+	.thesis-list{
+		padding-left: 9%;
+	}
+	
+	.thesis-list__item p {
+    	font-size: 18px;
+	}
+	
+}
+
+@media (max-width: 400px){
+	
+	.text--yellow{
+		color: black;
+	}
+	
+	.lecture.active::before{
+		width: 8%;
+	}
+	
+	.lecture.lecture--nolist::before{
+		width: 6%;
+	}
+	
+	.thesis-list{
+		padding-left: 7%;
+	}
+	
+}
+
 
 
